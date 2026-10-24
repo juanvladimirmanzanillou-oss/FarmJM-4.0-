@@ -1,0 +1,19 @@
+# Blueprint de Render: crea el servicio web gratuito a partir de este repositorio.
+# Las credenciales NO van aquí: se escriben en el panel de Render (sync: false).
+services:
+  - type: web
+    name: farmjm
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: "10000"
+      - key: FARMJM_DB_URL
+        sync: false
+      - key: FARMJM_DB_USER
+        sync: false
+      - key: FARMJM_DB_PASSWORD
+        sync: false
+      - key: FARMJM_DB_POOL_SIZE
+        value: "3"

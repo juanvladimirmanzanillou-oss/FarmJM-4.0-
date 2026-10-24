@@ -1,0 +1,11 @@
+# Compilados y entorno
+target/
+.idea/
+.vscode/
+*.iml
+# Secretos: NUNCA subir credenciales reales ni claves 2FA
+config.properties
+# Logs y reportes generados
+logs/
+*.log
+Reporte_FarmJM_*.pdf

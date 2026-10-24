@@ -1,0 +1,6 @@
+target/
+logs/
+.git/
+config.properties
+docs/
+*.md
